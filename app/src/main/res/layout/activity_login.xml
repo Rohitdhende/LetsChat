@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="#4A4A4A"
+    tools:context=".LoginActivity"
+>
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/card"
+        android:layout_centerVertical="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="30dp">
+            <TextView
+                android:layout_marginBottom="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"
+                app:met_floatingLabel="normal"
+                android:textColorHint="#fff"
+                android:hint="Email"
+                android:textColor="@color/white"
+                app:met_baseColor="@color/white"
+                />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                app:met_floatingLabel="normal"
+                android:hint="Password"
+                android:textColor="@color/white"
+                app:met_baseColor="@color/white"
+                />
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/btn_Login"
+                android:textColor="#3A3A3A"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_bg_rounded_corners"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New User?"
+                    android:id="@+id/new_user"
+                    android:padding="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/white"
+                    />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
